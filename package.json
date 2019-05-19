@@ -1,0 +1,86 @@
+{
+  "name": "@kibibit/alfred",
+  "version": "1.0.0",
+  "description": "Monitor Jenkins jobs to completion from node or cli",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "/lib"
+  ],
+  "bin": {
+    "alfred": "lib/announce-it-cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "lint:fix": "tslint -c tslint.json --fix src/**/*.ts",
+    "lint": "tslint -c tslint.json src/**/*.ts",
+    "semantic-release": "semantic-release",
+    "start": "node ./lib/alfred-cli",
+    "test:watch": "jest --watchAll --coverage",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kibibit/alfred.git"
+  },
+  "keywords": [
+    "jenkins"
+  ],
+  "author": "thatkookooguy <neilkalman@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kibibit/alfred/issues"
+  },
+  "homepage": "https://github.com/Kibibit/alfred#readme",
+  "release": {
+    "branches": [
+      "master",
+      {
+        "name": "next",
+        "prerelease": true
+      }
+    ],
+    "plugins": [
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json"
+          ],
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "command-line-args": "^5.1.1",
+    "command-line-usage": "^5.0.5",
+    "fs-extra": "^8.0.1",
+    "jenkins": "^0.25.0",
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "@types/command-line-args": "^5.0.0",
+    "@types/command-line-usage": "^5.0.1",
+    "@types/fs-extra": "^7.0.0",
+    "@types/jenkins": "^0.23.1",
+    "@types/lodash": "^4.14.129",
+    "all-contributors-cli": "^6.4.0",
+    "coveralls": "^3.0.3",
+    "jest": "^24.8.0",
+    "jest-stare": "^1.13.2",
+    "npm-check": "^5.9.0",
+    "semantic-release-cli": "^5.1.0",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.1.0",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5"
+  }
+}
