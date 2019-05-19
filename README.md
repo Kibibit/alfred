@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github/apps/l1ntit" target="blank"><img src="http://kibibit.io/kibibit-assets/4x/tdd1t-avatar%404x.png" width="150" alt="achievibit Logo" />
+  <a href="https://github/apps/l1ntit" target="blank"><img src="/alfred.jpg" width="150" alt="achievibit Logo" />
   </a>
   <h2 align="center">alfred</h2>
 </p>
