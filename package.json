@@ -1,6 +1,6 @@
 {
   "name": "@kibibit/alfred",
-  "version": "1.0.0-next.1",
+  "version": "1.0.0-next.2",
   "description": "Monitor Jenkins jobs to completion from node or cli",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
