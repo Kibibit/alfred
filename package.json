@@ -20,8 +20,7 @@
     "semantic-release": "semantic-release",
     "start": "node ./lib/alfred-cli",
     "test:watch": "jest --watchAll --coverage",
-    "test": "jest --coverage",
-    "tests": "tsc"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -76,17 +75,22 @@
     "@types/command-line-usage": "^5.0.1",
     "@types/fs-extra": "^7.0.0",
     "@types/jenkins": "^0.23.1",
+    "@types/jest": "^24.0.13",
     "@types/lodash": "^4.14.129",
     "all-contributors-cli": "^6.4.0",
     "coveralls": "^3.0.3",
     "jest": "^24.8.0",
     "jest-stare": "^1.13.2",
     "npm-check": "^5.9.0",
+    "semantic-release": "^16.0.0-beta.18",
     "semantic-release-cli": "^5.1.0",
     "ts-jest": "^24.0.2",
     "ts-node": "^8.1.0",
     "tslint": "^5.16.0",
-    "typescript": "^3.4.5",
-    "semantic-release": "^16.0.0-beta.18"
+    "typescript": "^3.4.5"
+  },
+  "jest-stare": {
+    "resultDir": "test-results/",
+    "coverageLink": "../coverage/index.html"
   }
 }
