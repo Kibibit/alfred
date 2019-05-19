@@ -19,3 +19,5 @@
   Monitor Jenkins jobs to completion from node or cli
 </p>
 <hr>
+
+***WIP*** - come back soon!
