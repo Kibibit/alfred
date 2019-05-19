@@ -15,12 +15,12 @@ stages:
   - deploy
 jobs:
   include:
-    - stage: test
-      node_js: lts/*
-      script:
-        - npm run build
-        - npm run test
-        - npm run coveralls
+    # - stage: test
+    #   node_js: lts/*
+    #   script:
+    #     - npm run build
+    #     - npm run test
+    #     - npm run coveralls
     - stage: release
       node_js: lts/*
       script:
