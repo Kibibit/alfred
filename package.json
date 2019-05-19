@@ -20,7 +20,8 @@
     "semantic-release": "semantic-release",
     "start": "node ./lib/alfred-cli",
     "test:watch": "jest --watchAll --coverage",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "tests": "tsc"
   },
   "repository": {
     "type": "git",
