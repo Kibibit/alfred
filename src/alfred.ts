@@ -1,5 +1,5 @@
-import Jenkins = require('jenkins');
-import { isNumber, get } from 'lodash';
+import Jenkins from 'jenkins';
+import { get, isNumber } from 'lodash';
 
 export interface IParameters {
   [ key: string ]: any;
